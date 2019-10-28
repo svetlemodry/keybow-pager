@@ -2,6 +2,7 @@ require 'keybow-pager/keybow'
 require 'keybow-pager/buttons'
 require 'keybow-pager/colors'
 require 'keybow-pager/pages'
+require 'snippets/linux_snippets'
 
 function setup() 
     keybow.auto_lights(false)
