@@ -19,17 +19,17 @@ pages.colors[pages.UNUSED_3] = color.YELLOW;
 
 pages.operations = {}
 pages.operations[pages.DESKTOP] = {
-    operations.chrome_close_tab, nil,                    operations.scroll_up, operations.text_bigger,
-    operations.browser_back, operations.browser_forward, operations.scroll_down, operations.text_smaller
+    operations.browser_close_tab, operations.browser_reopen_tab, operations.scroll_up, operations.text_bigger,
+    operations.browser_tab_back, operations.browser_tab_forward, operations.scroll_down, operations.text_smaller
 }
 
 pages.operations[pages.CODING] = {
-    operations.git_tree, operations.git_pull, operations.git_commit_a, operations.git_push,
-    operations.pycharm_back, operations.pycharm_to_declaration, nil, nil
+    operations.browser_close_tab, operations.browser_reopen_tab, nil, operations.service_account_template,
+    operations.browser_open_copied_link, nil, nil, nil
 }
 
 pages.operations[pages.APPS] = {
-    operations.open_chrome, nil, nil, nil,
+    operations.open_firefox, operations.open_vivaldi, operations.open_thunderbird, nil,
     nil, nil, nil, nil
 }
 
@@ -40,15 +40,15 @@ pages.operations[pages.UNUSED_3] = {
 
 pages.operation_colors = {}
 pages.operation_colors[pages.DESKTOP] = {
-    color.RED,  nil,        color.DARK_YELLOW, color.DARK_GREEN,
+    color.RED, color.DARK_GREEN, color.DARK_YELLOW, color.DARK_GREEN,
     color.GRAY, color.GRAY, color.DARK_YELLOW, color.DARK_GREEN
 }
 pages.operation_colors[pages.CODING] = {
-    color.RED,   color.RED,   color.RED, color.RED,        
-    color.GREEN, color.GREEN, nil,       nil
+    color.RED, color.DARK_GREEN, nil, color.RED,        
+    color.GRAY, nil, nil, nil
 }
 pages.operation_colors[pages.APPS] = {
-    color.YELLOW, nil, nil, nil,
+    color.RED, color.YELLOW, color.BLUE, nil,
     nil, nil, nil, nil
 }
 pages.operation_colors[pages.UNUSED_3] = {
